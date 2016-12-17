@@ -1,0 +1,40 @@
+
+
+
+<head>
+    <% include ../views/partials/head %>
+</head>
+  <header>
+        <% include ../views/partials/header %>
+    </header>
+
+
+<body class="container">
+
+  
+ 
+<div class=row>
+    
+<form class="text-center form-group" action="/uploads" method="post" enctype="multipart/form-data">
+ 
+    <input class="form-control form-control-file" type=file name="up"></input>
+  
+    <input class="btn btn-primary" type=submit value="Submit"></input>
+</form>
+
+
+<% if (button) { %>
+    <form class="text-center form-group" action="/download" method="get"><input class="btn btn-prmary" type=submit value ="Download"></input></form>
+<% } %>
+</div>
+
+    
+
+ 
+    
+</body>
+   <footer>
+        <% include ../views/partials/footer %>
+    </footer>
+</html>
+
